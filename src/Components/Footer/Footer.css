@@ -1,0 +1,40 @@
+.footer{
+    
+}
+.footer>hr{
+    border: 2px solid orange;
+    width:93%;
+}
+.foot{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 4rem;
+}
+.foot>img{
+    width: 3rem; 
+}
+.l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l>img{
+    height:9rem;
+    width: 12rem;
+}
+@media screen and (max-width:768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot>img{
+        width: 2rem;
+    }
+    .footer hr{
+        width: 75%;
+    }
+    .l>img{
+        width: 8rem;
+        height: 8rem;
+    }
+}

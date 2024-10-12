@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+   justify-content: space-between;
+}
+.logo{
+   
+   margin-left: 2.5rem;
+    width :200px;
+    height: auto;
+}
+.headermenu{
+   padding: 10px;
+   padding-top: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+
+}
+.headermenu>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+  
+   font-weight: bold;
+}
+@media  screen and (max-width:768px) {
+    .headermenu{
+        position: absolute;
+        margin-left: -4.5rem;
+        transform: scale(0.6);
+        margin-top: 0.5rem;
+    }
+}

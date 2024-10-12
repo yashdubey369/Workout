@@ -1,0 +1,93 @@
+.joins{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+.left-j{
+    width: 50%;
+    color: white;
+    font-size:3rem ;
+    font-weight: bold;
+    /* position: relative; */
+}
+.y{
+    display: flex;
+    flex-direction: column;
+}
+.left-j>hr{
+    position: relative;
+    width: 40rem;
+    border: 2px solid orange;
+    border-radius: 20%;
+    margin-left: 0%;
+}
+.right-j{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+
+}
+.emails{
+    background-color: rgb(136, 130, 130);
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 2rem;
+  
+}
+.emails>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+   color: white;
+
+}
+
+.btn{
+    background: var(--planCard);
+}
+.em{
+    /* position: absolute;
+    right: 16rem;
+    top: 215rem; */
+}
+@media screen and (max-width:768px){
+    .joins{
+
+        flex-direction: column;
+        /* margin-top: 18em; */
+    }
+    .left-j{
+        width: 100%;
+        height: fit-content;
+        font-size: 1.5rem;
+        /* flex-direction: column; */
+        /* margin-left: -1rem;
+        margin-top: 1rem; */
+    }
+    /* .left-j>div:nth-of-type(2){
+        font-size: 1.5rem;
+       
+    } */
+    .right-j{
+        width: 100%;
+        /* position: relative; */
+        /* top: 0%; */
+        /* margin-top: 15rem; */
+    }
+    .em{
+      
+       /* margin-top: 220rem; */
+       /* left: 1rem; */
+       transform: scale(0.8);
+      
+    }
+    .left-j>hr{
+        width: 100%;
+        margin-top: 16rem;
+ 
+    }
+   
+}

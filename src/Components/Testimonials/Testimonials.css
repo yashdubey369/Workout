@@ -1,0 +1,120 @@
+.testimonials{
+    margin-top: 4rem;
+display: flex;
+}
+.left-t{
+   
+    display: flex;
+   flex: 1 1;
+   
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    gap: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+
+
+    
+}
+.left-t>:nth-child(2){
+    font-size: 2.5rem;
+    color: white;
+}
+.left-t>:nth-child(3){
+    font-size: 3rem;
+    color: white;
+}
+.left-t>:nth-child(1){
+    font-size: 1rem;
+    color: var(--orange);
+}
+.left-t>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.right-t{
+    flex: 2 ;
+    position: relative;
+}
+.x{
+    color: var(--orange);
+    font-weight: normal;
+}.right-t>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 15rem;
+    top: 5rem;
+}
+.right-t>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 15rem;
+    border: 3px solid orange;
+    color: var(--orange);
+  /* background-color: transparent; */
+    right: 16rem;
+    top: 4rem;
+}
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 17rem;height: 15rem;
+   
+    color: var(--orange);
+ background: var(--planCard);
+    right: 14rem;
+    top: 11rem;
+}
+.arrow{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 35rem;
+}
+.arrow>img{
+    width: 1.5rem;
+    cursor: pointer;
+
+}
+.c{
+  
+    width: 30rem;
+    height: 15rem;
+  left: 15rem;
+ 
+    
+}
+
+@media  screen and (max-width:768px) {
+    .testimonials{
+        flex-direction: column;
+        margin-top: -1rem;
+        position: relative;
+    }
+  .right-t{
+    position: relative;
+    left: 12rem;
+    transform: scale(0.8);
+  }
+  .arrow>img{
+    position: relative;
+    top:4rem;
+    left: 6rem;
+  }
+  .left-t>span:nth-of-type(4){
+    font-size: small;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+    
+  }
+  .left-t>span:nth-of-type(3){
+    font-size: large;
+    margin-top: -1.5rem;
+  }
+}
